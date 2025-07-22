@@ -4,6 +4,7 @@ import java.util.Set;
 import java.util.Stack;
 
 import controllers.MaquinaController;
+import javax.sound.sampled.SourceDataLine;
 import models.Maquina;
 
 public class App {
@@ -65,7 +66,30 @@ public class App {
                 new Maquina("Nodo7", "23.248.75.5", Arrays.asList(18, 28, 10, 27, 29)),
                 new Maquina("Nodo6", "169.238.150.174", Arrays.asList(6, 14, 3)),
                 new Maquina("DB13", "71.248.50.86", Arrays.asList(17, 11, 12)));
-        return maquinas;
+               
+                for(Maquina p: maquinas){
+                    System.out.println("Las maquinas son: ");
+                    System.out.println(p);
+                }
+
+                MaquinaController controller = new MaquinaController();
+
+                System.out.println("PRIMER METODO");
+                Stack<Maquina> filtrar MaquinaController.filtrarPorSubred(maquinas, 50);
+                System.out.println("SEGUNDO METODO");
+                set<Maquina>subred MaquinaController.ordenarPorSubred(maquinas, 100);
+
+                System.out.println("TERCER METODO");
+                Map<Maquina>riesgo MaquinaController.agruparPorRiesgo(pila);
+
+                System.out.println("CUARTO METODO");
+                Stack <Maquina> explotar MaquinaController.explotarGrupo(mapa);
 
     }
+   
+
+
+        
+
+
 }

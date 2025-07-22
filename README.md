@@ -100,3 +100,15 @@ Para validar tu implementación se ejecutarán pruebas unitarias sobre:
 | 🔷 Método D – `explotarGrupo`    | Identifica correctamente el grupo más numeroso y, en caso de empate, el de mayor riesgo. Invierte orden a LIFO |  1.5       |
 | **Total**                        |                                                                                                                | **9.0**    |
 
+
+
+
+
+
+
+
+
+
+
+
+
